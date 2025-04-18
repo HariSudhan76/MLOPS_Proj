@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: NetworkSecurityProject
+Version: 0.0.1
+Summary: An Network security project with structured packaging
+Author-email: "G. Hari" <g.harisudhan76@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: flask
+Requires-Dist: xgboost
+Requires-Dist: catboost
+Requires-Dist: dill
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: tensorflow
+Requires-Dist: python-dotenv
+Requires-Dist: pymongo
+Requires-Dist: certifi
+
+## This is my Network Security Projects for Phishing Data
