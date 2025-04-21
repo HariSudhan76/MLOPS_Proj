@@ -1,0 +1,3 @@
+[2025-04-21 21:46:31,881] 14 root - INFO - Enter the try block
+[2025-04-21 21:46:35,292] 64 root - INFO - Performed train test split on the dataframe
+[2025-04-21 21:46:35,292] 65 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class

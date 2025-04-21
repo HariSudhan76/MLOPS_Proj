@@ -1,5 +1,5 @@
 import sys
-from customlogging.logger import logging
+from networksecurity.exception.customlogging.logger import logging
 
 def error_message_detail(error,error_detail:sys):
     _,_,exec_tb = error_detail.exc_info() ##exec_tb 3rd variable will give proper info which line number execption has occured etc.

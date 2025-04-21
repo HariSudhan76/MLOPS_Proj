@@ -3,6 +3,7 @@ components
 constant
 entity
 exception
-logging
+logs
 pipeline
+test
 utils

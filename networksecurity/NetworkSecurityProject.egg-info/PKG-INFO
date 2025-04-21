@@ -10,13 +10,14 @@ Requires-Dist: numpy
 Requires-Dist: matplotlib
 Requires-Dist: flask
 Requires-Dist: xgboost
-Requires-Dist: catboost
 Requires-Dist: dill
 Requires-Dist: seaborn
 Requires-Dist: scikit-learn
 Requires-Dist: tensorflow
 Requires-Dist: python-dotenv
-Requires-Dist: pymongo
+Requires-Dist: pymongo[srv]
 Requires-Dist: certifi
+Requires-Dist: pymongo
+Requires-Dist: dotenv
 
 ## This is my Network Security Projects for Phishing Data
