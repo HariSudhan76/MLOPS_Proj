@@ -12,5 +12,6 @@ pymongo[srv]
 certifi
 pymongo
 dotenv
+PyYAML
 
-# -e .
+-e .
