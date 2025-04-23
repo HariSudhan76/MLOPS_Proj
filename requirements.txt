@@ -3,7 +3,7 @@ numpy
 matplotlib
 flask
 xgboost
-dill
+pickle4
 seaborn
 scikit-learn
 tensorflow
