@@ -1,0 +1,43 @@
+[2025-04-23 13:33:32,766] 15 root - INFO - Initiate the data ingestion
+[2025-04-23 13:33:37,628] 65 root - INFO - Performed train test split on the dataframe
+[2025-04-23 13:33:37,628] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-04-23 13:33:37,628] 70 root - INFO - Exporting train and test file path
+[2025-04-23 13:33:37,682] 78 root - INFO - Exported train and test file path
+[2025-04-23 13:33:37,683] 17 root - INFO - Data initiation Completed
+[2025-04-23 13:33:37,686] 20 root - INFO - Initiate the data validation
+[2025-04-23 13:33:37,727] 37 root - INFO - Required number of columns:2
+[2025-04-23 13:33:37,728] 38 root - INFO - Data Frame has columns: 31
+[2025-04-23 13:33:37,728] 37 root - INFO - Required number of columns:2
+[2025-04-23 13:33:37,728] 38 root - INFO - Data Frame has columns: 31
+[2025-04-23 13:33:37,729] 61 root - INFO - having_IP_Address-> p-value: 0.9983463214239424, Drift: False
+[2025-04-23 13:33:37,731] 61 root - INFO - URL_Length-> p-value: 0.9995865036983179, Drift: False
+[2025-04-23 13:33:37,734] 61 root - INFO - Shortining_Service-> p-value: 0.999999999973084, Drift: False
+[2025-04-23 13:33:37,736] 61 root - INFO - having_At_Symbol-> p-value: 1.0, Drift: False
+[2025-04-23 13:33:37,739] 61 root - INFO - double_slash_redirecting-> p-value: 0.9999983994854099, Drift: False
+[2025-04-23 13:33:37,741] 61 root - INFO - Prefix_Suffix-> p-value: 0.9902897879882562, Drift: False
+[2025-04-23 13:33:37,742] 61 root - INFO - having_Sub_Domain-> p-value: 0.6169958385940552, Drift: False
+[2025-04-23 13:33:37,745] 61 root - INFO - SSLfinal_State-> p-value: 0.999991733805822, Drift: False
+[2025-04-23 13:33:37,748] 61 root - INFO - Domain_registeration_length-> p-value: 1.0, Drift: False
+[2025-04-23 13:33:37,749] 61 root - INFO - Favicon-> p-value: 0.8098241126858364, Drift: False
+[2025-04-23 13:33:37,750] 61 root - INFO - port-> p-value: 0.47011983283925707, Drift: False
+[2025-04-23 13:33:37,753] 61 root - INFO - HTTPS_token-> p-value: 1.0, Drift: False
+[2025-04-23 13:33:37,756] 61 root - INFO - Request_URL-> p-value: 1.0, Drift: False
+[2025-04-23 13:33:37,759] 61 root - INFO - URL_of_Anchor-> p-value: 1.0, Drift: False
+[2025-04-23 13:33:37,761] 61 root - INFO - Links_in_tags-> p-value: 0.9964968277601536, Drift: False
+[2025-04-23 13:33:37,762] 61 root - INFO - SFH-> p-value: 0.696262907175445, Drift: False
+[2025-04-23 13:33:37,763] 61 root - INFO - Submitting_to_email-> p-value: 0.43982839593783674, Drift: False
+[2025-04-23 13:33:37,766] 61 root - INFO - Abnormal_URL-> p-value: 0.9999999989342155, Drift: False
+[2025-04-23 13:33:37,769] 61 root - INFO - Redirect-> p-value: 1.0, Drift: False
+[2025-04-23 13:33:37,770] 61 root - INFO - on_mouseover-> p-value: 0.9149490253525718, Drift: False
+[2025-04-23 13:33:37,773] 61 root - INFO - RightClick-> p-value: 0.9999983994854099, Drift: False
+[2025-04-23 13:33:37,773] 61 root - INFO - popUpWidnow-> p-value: 0.8487839446728682, Drift: False
+[2025-04-23 13:33:37,774] 61 root - INFO - Iframe-> p-value: 0.7463404136818743, Drift: False
+[2025-04-23 13:33:37,775] 61 root - INFO - age_of_domain-> p-value: 0.6793256569216634, Drift: False
+[2025-04-23 13:33:37,778] 61 root - INFO - DNSRecord-> p-value: 0.9999996593475295, Drift: False
+[2025-04-23 13:33:37,781] 61 root - INFO - web_traffic-> p-value: 1.0, Drift: False
+[2025-04-23 13:33:37,785] 61 root - INFO - Page_Rank-> p-value: 0.9999999989342155, Drift: False
+[2025-04-23 13:33:37,785] 61 root - INFO - Google_Index-> p-value: 0.3428866327563024, Drift: False
+[2025-04-23 13:33:37,789] 61 root - INFO - Links_pointing_to_page-> p-value: 0.9999997772661215, Drift: False
+[2025-04-23 13:33:37,790] 61 root - INFO - Statistical_report-> p-value: 0.6679997959943369, Drift: False
+[2025-04-23 13:33:37,793] 61 root - INFO - Result-> p-value: 0.9999999999999728, Drift: False
+[2025-04-23 13:33:37,851] 24 root - INFO - data validation completed

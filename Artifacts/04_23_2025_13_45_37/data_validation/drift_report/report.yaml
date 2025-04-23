@@ -1,0 +1,93 @@
+having_IP_Address:
+  p_value: 0.9999999095448506
+  drift_status: false
+URL_Length:
+  p_value: 0.9464914399762034
+  drift_status: false
+Shortining_Service:
+  p_value: 1.0
+  drift_status: false
+having_At_Symbol:
+  p_value: 0.9999999999981217
+  drift_status: false
+double_slash_redirecting:
+  p_value: 1.0
+  drift_status: false
+Prefix_Suffix:
+  p_value: 1.0
+  drift_status: false
+having_Sub_Domain:
+  p_value: 0.9591630531107953
+  drift_status: false
+SSLfinal_State:
+  p_value: 0.05576441913636565
+  drift_status: false
+Domain_registeration_length:
+  p_value: 0.9999939100687764
+  drift_status: false
+Favicon:
+  p_value: 0.9999999999397761
+  drift_status: false
+port:
+  p_value: 0.9999999932691597
+  drift_status: false
+HTTPS_token:
+  p_value: 1.0
+  drift_status: false
+Request_URL:
+  p_value: 0.9999999962612656
+  drift_status: false
+URL_of_Anchor:
+  p_value: 0.11226604049515176
+  drift_status: false
+Links_in_tags:
+  p_value: 0.9813203340096497
+  drift_status: false
+SFH:
+  p_value: 0.45990545815768613
+  drift_status: false
+Submitting_to_email:
+  p_value: 0.9999999999999999
+  drift_status: false
+Abnormal_URL:
+  p_value: 0.9999999797009747
+  drift_status: false
+Redirect:
+  p_value: 0.9999999999999994
+  drift_status: false
+on_mouseover:
+  p_value: 0.9990674182373884
+  drift_status: false
+RightClick:
+  p_value: 1.0
+  drift_status: false
+popUpWidnow:
+  p_value: 1.0
+  drift_status: false
+Iframe:
+  p_value: 0.9999999095448506
+  drift_status: false
+age_of_domain:
+  p_value: 0.9252648943119504
+  drift_status: false
+DNSRecord:
+  p_value: 0.9999996593475295
+  drift_status: false
+web_traffic:
+  p_value: 0.07267464789498079
+  drift_status: false
+Page_Rank:
+  p_value: 1.0
+  drift_status: false
+Google_Index:
+  p_value: 0.9999988894018609
+  drift_status: false
+Links_pointing_to_page:
+  p_value: 0.21837571930325483
+  drift_status: false
+Statistical_report:
+  p_value: 1.0
+  drift_status: false
+Result:
+  p_value: 0.015084598793330793
+  drift_status: true
