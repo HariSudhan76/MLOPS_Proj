@@ -36,15 +36,13 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e,sys)
     
-    def get_data_transformer_object(cls)->Pipeline:
+    @staticmethod
+    def get_data_transformer_object()->Pipeline:
         """
-        It intilialises a KNNImputer object with the parameters specified in the training_pipeline.py file
-        and return a Pipeline object with KNNImputer object as first step.
-        Args:
-        cls: DataTransformation
+            Initializes a KNNImputer with specified parameters and returns a Pipeline object.
 
-        Returns:
-        A Pipeline object
+            Returns:
+                Pipeline: A sklearn pipeline object with KNNImputer as its first step.
         """
         logging.info(
             "Entered get_data_stransformer_object method of transformation class"
@@ -77,7 +75,7 @@ class DataTransformation:
             target_feature_test_df = test_df[TARGET_COLUMN]
             target_feature_test_df = target_feature_test_df.replace(-1,0)
 
-            preprocessor = self.get_data_transformer_object()
+            preprocessor = DataTransformation.get_data_transformer_object()
             preprocessor_object = preprocessor.fit(input_feature_train_df)
             transformed_input_train_feature = preprocessor.transform(input_feature_train_df)
             transformed_input_test_feature = preprocessor.transform(input_feature_test_df)

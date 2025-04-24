@@ -1,0 +1,46 @@
+[2025-04-24 10:00:00,750] 16 root - INFO - Initiate the data ingestion
+[2025-04-24 10:00:04,353] 65 root - INFO - Performed train test split on the dataframe
+[2025-04-24 10:00:04,353] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-04-24 10:00:04,353] 70 root - INFO - Exporting train and test file path
+[2025-04-24 10:00:04,407] 78 root - INFO - Exported train and test file path
+[2025-04-24 10:00:04,407] 19 root - INFO - Data initiation Completed
+[2025-04-24 10:00:04,411] 23 root - INFO - Initiate the data validation
+[2025-04-24 10:00:04,453] 37 root - INFO - Required number of columns:2
+[2025-04-24 10:00:04,453] 38 root - INFO - Data Frame has columns: 31
+[2025-04-24 10:00:04,454] 37 root - INFO - Required number of columns:2
+[2025-04-24 10:00:04,454] 38 root - INFO - Data Frame has columns: 31
+[2025-04-24 10:00:04,455] 61 root - INFO - having_IP_Address-> p-value: 0.9992001088769269, Drift: False
+[2025-04-24 10:00:04,457] 61 root - INFO - URL_Length-> p-value: 0.9902897879882562, Drift: False
+[2025-04-24 10:00:04,459] 61 root - INFO - Shortining_Service-> p-value: 0.9999999881751745, Drift: False
+[2025-04-24 10:00:04,460] 61 root - INFO - having_At_Symbol-> p-value: 0.2245984989063995, Drift: False
+[2025-04-24 10:00:04,461] 61 root - INFO - double_slash_redirecting-> p-value: 0.9884283678259363, Drift: False
+[2025-04-24 10:00:04,464] 61 root - INFO - Prefix_Suffix-> p-value: 0.999999999870135, Drift: False
+[2025-04-24 10:00:04,465] 61 root - INFO - having_Sub_Domain-> p-value: 0.20928889335820577, Drift: False
+[2025-04-24 10:00:04,469] 61 root - INFO - SSLfinal_State-> p-value: 0.01357123555875896, Drift: True
+[2025-04-24 10:00:04,470] 61 root - INFO - Domain_registeration_length-> p-value: 0.9751784512217775, Drift: False
+[2025-04-24 10:00:04,473] 61 root - INFO - Favicon-> p-value: 1.0, Drift: False
+[2025-04-24 10:00:04,476] 61 root - INFO - port-> p-value: 0.9999955619617864, Drift: False
+[2025-04-24 10:00:04,477] 61 root - INFO - HTTPS_token-> p-value: 0.9993169455931838, Drift: False
+[2025-04-24 10:00:04,480] 61 root - INFO - Request_URL-> p-value: 1.0, Drift: False
+[2025-04-24 10:00:04,481] 61 root - INFO - URL_of_Anchor-> p-value: 0.43488478023596455, Drift: False
+[2025-04-24 10:00:04,483] 61 root - INFO - Links_in_tags-> p-value: 0.9783976116108047, Drift: False
+[2025-04-24 10:00:04,484] 61 root - INFO - SFH-> p-value: 0.13369774887827723, Drift: False
+[2025-04-24 10:00:04,485] 61 root - INFO - Submitting_to_email-> p-value: 0.9993169455931838, Drift: False
+[2025-04-24 10:00:04,487] 61 root - INFO - Abnormal_URL-> p-value: 1.0, Drift: False
+[2025-04-24 10:00:04,489] 61 root - INFO - Redirect-> p-value: 0.9751784512217775, Drift: False
+[2025-04-24 10:00:04,491] 61 root - INFO - on_mouseover-> p-value: 1.0, Drift: False
+[2025-04-24 10:00:04,494] 61 root - INFO - RightClick-> p-value: 1.0, Drift: False
+[2025-04-24 10:00:04,497] 61 root - INFO - popUpWidnow-> p-value: 1.0, Drift: False
+[2025-04-24 10:00:04,499] 61 root - INFO - Iframe-> p-value: 1.0, Drift: False
+[2025-04-24 10:00:04,500] 61 root - INFO - age_of_domain-> p-value: 0.282980715515462, Drift: False
+[2025-04-24 10:00:04,503] 61 root - INFO - DNSRecord-> p-value: 1.0, Drift: False
+[2025-04-24 10:00:04,504] 61 root - INFO - web_traffic-> p-value: 0.9951111803133278, Drift: False
+[2025-04-24 10:00:04,506] 61 root - INFO - Page_Rank-> p-value: 0.9997115090643619, Drift: False
+[2025-04-24 10:00:04,506] 61 root - INFO - Google_Index-> p-value: 0.9993169455931838, Drift: False
+[2025-04-24 10:00:04,510] 61 root - INFO - Links_pointing_to_page-> p-value: 0.9999955619617864, Drift: False
+[2025-04-24 10:00:04,512] 61 root - INFO - Statistical_report-> p-value: 0.999999999870135, Drift: False
+[2025-04-24 10:00:04,514] 61 root - INFO - Result-> p-value: 0.6906258784339548, Drift: False
+[2025-04-24 10:00:04,571] 26 root - INFO - data validation completed
+[2025-04-24 10:00:04,571] 31 root - INFO - Initiate the data transformation
+[2025-04-24 10:00:04,571] 60 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-04-24 10:00:04,571] 62 root - INFO - starting data transformation
