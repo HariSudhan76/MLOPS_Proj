@@ -1,0 +1,52 @@
+[2025-04-24 15:10:44,549] 16 root - INFO - Initiate the data ingestion
+[2025-04-24 15:10:47,685] 65 root - INFO - Performed train test split on the dataframe
+[2025-04-24 15:10:47,685] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-04-24 15:10:47,685] 70 root - INFO - Exporting train and test file path
+[2025-04-24 15:10:47,739] 78 root - INFO - Exported train and test file path
+[2025-04-24 15:10:47,740] 22 root - INFO - Data initiation Completed
+[2025-04-24 15:10:47,740] 25 root - INFO - Initiate the data validation
+[2025-04-24 15:10:47,785] 37 root - INFO - Required number of columns:2
+[2025-04-24 15:10:47,785] 38 root - INFO - Data Frame has columns: 31
+[2025-04-24 15:10:47,786] 37 root - INFO - Required number of columns:2
+[2025-04-24 15:10:47,786] 38 root - INFO - Data Frame has columns: 31
+[2025-04-24 15:10:47,787] 61 root - INFO - having_IP_Address-> p-value: 0.9285433296045734, Drift: False
+[2025-04-24 15:10:47,789] 61 root - INFO - URL_Length-> p-value: 0.7242595407673655, Drift: False
+[2025-04-24 15:10:47,789] 61 root - INFO - Shortining_Service-> p-value: 0.9972361772209787, Drift: False
+[2025-04-24 15:10:47,792] 61 root - INFO - having_At_Symbol-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,795] 61 root - INFO - double_slash_redirecting-> p-value: 0.9999983994854099, Drift: False
+[2025-04-24 15:10:47,798] 61 root - INFO - Prefix_Suffix-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,800] 61 root - INFO - having_Sub_Domain-> p-value: 0.9911337131748147, Drift: False
+[2025-04-24 15:10:47,801] 61 root - INFO - SSLfinal_State-> p-value: 0.2374452694909187, Drift: False
+[2025-04-24 15:10:47,804] 61 root - INFO - Domain_registeration_length-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,807] 61 root - INFO - Favicon-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,807] 61 root - INFO - port-> p-value: 0.9960739355626309, Drift: False
+[2025-04-24 15:10:47,808] 61 root - INFO - HTTPS_token-> p-value: 0.888188931899031, Drift: False
+[2025-04-24 15:10:47,811] 61 root - INFO - Request_URL-> p-value: 0.9999999962612656, Drift: False
+[2025-04-24 15:10:47,813] 61 root - INFO - URL_of_Anchor-> p-value: 0.6509863853107354, Drift: False
+[2025-04-24 15:10:47,816] 61 root - INFO - Links_in_tags-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,818] 61 root - INFO - SFH-> p-value: 0.9636514116065298, Drift: False
+[2025-04-24 15:10:47,820] 61 root - INFO - Submitting_to_email-> p-value: 0.9999999999999148, Drift: False
+[2025-04-24 15:10:47,823] 61 root - INFO - Abnormal_URL-> p-value: 0.9999999989342155, Drift: False
+[2025-04-24 15:10:47,826] 61 root - INFO - Redirect-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,829] 61 root - INFO - on_mouseover-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,832] 61 root - INFO - RightClick-> p-value: 0.9999999989342155, Drift: False
+[2025-04-24 15:10:47,834] 61 root - INFO - popUpWidnow-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,835] 61 root - INFO - Iframe-> p-value: 0.9978473549005955, Drift: False
+[2025-04-24 15:10:47,838] 61 root - INFO - age_of_domain-> p-value: 0.9999983994854099, Drift: False
+[2025-04-24 15:10:47,841] 61 root - INFO - DNSRecord-> p-value: 0.9999992399051418, Drift: False
+[2025-04-24 15:10:47,842] 61 root - INFO - web_traffic-> p-value: 0.5555063786183708, Drift: False
+[2025-04-24 15:10:47,846] 61 root - INFO - Page_Rank-> p-value: 0.9999999797009747, Drift: False
+[2025-04-24 15:10:47,848] 61 root - INFO - Google_Index-> p-value: 0.999999999973084, Drift: False
+[2025-04-24 15:10:47,850] 61 root - INFO - Links_pointing_to_page-> p-value: 0.9751784512217775, Drift: False
+[2025-04-24 15:10:47,852] 61 root - INFO - Statistical_report-> p-value: 0.9999462839353719, Drift: False
+[2025-04-24 15:10:47,856] 61 root - INFO - Result-> p-value: 1.0, Drift: False
+[2025-04-24 15:10:47,914] 30 root - INFO - data validation completed
+[2025-04-24 15:10:47,914] 33 root - INFO - Initiate the data transformation
+[2025-04-24 15:10:47,914] 62 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-04-24 15:10:47,914] 64 root - INFO - starting data transformation
+[2025-04-24 15:10:47,936] 47 root - INFO - Entered get_data_stransformer_object method of transformation class
+[2025-04-24 15:10:47,936] 52 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-04-24 15:10:47,945] 49 root - INFO - Entered the save_object method of Main Utils class
+[2025-04-24 15:10:47,947] 53 root - INFO - Exited the save_object method of Main Utils class
+[2025-04-24 15:10:47,948] 38 root - INFO - data transformation completed
+[2025-04-24 15:10:47,948] 41 root - INFO - Initiate the model training
