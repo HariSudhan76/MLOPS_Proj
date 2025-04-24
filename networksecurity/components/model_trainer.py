@@ -23,6 +23,8 @@ from sklearn.ensemble import (
     RandomForestClassifier
 )
 import mlflow
+import dagshub
+dagshub.init(repo_owner='HariSudhan76',repo_name='MLOPS_Project',mlflow=True)
 
 
 class ModelTrainer:
