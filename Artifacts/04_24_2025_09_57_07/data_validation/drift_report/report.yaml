@@ -1,0 +1,93 @@
+having_IP_Address:
+  p_value: 0.8248120106846853
+  drift_status: false
+URL_Length:
+  p_value: 0.9999999999999919
+  drift_status: false
+Shortining_Service:
+  p_value: 1.0
+  drift_status: false
+having_At_Symbol:
+  p_value: 0.9998388206083407
+  drift_status: false
+double_slash_redirecting:
+  p_value: 0.9993169455931838
+  drift_status: false
+Prefix_Suffix:
+  p_value: 0.4011656710279605
+  drift_status: false
+having_Sub_Domain:
+  p_value: 0.999980543412802
+  drift_status: false
+SSLfinal_State:
+  p_value: 0.305989440066221
+  drift_status: false
+Domain_registeration_length:
+  p_value: 0.9919224549559418
+  drift_status: false
+Favicon:
+  p_value: 0.9968835466898608
+  drift_status: false
+port:
+  p_value: 1.0
+  drift_status: false
+HTTPS_token:
+  p_value: 0.9999148748234266
+  drift_status: false
+Request_URL:
+  p_value: 0.9851734872154114
+  drift_status: false
+URL_of_Anchor:
+  p_value: 0.37354804876543213
+  drift_status: false
+Links_in_tags:
+  p_value: 0.7786981711104273
+  drift_status: false
+SFH:
+  p_value: 1.0
+  drift_status: false
+Submitting_to_email:
+  p_value: 1.0
+  drift_status: false
+Abnormal_URL:
+  p_value: 0.9951111803133281
+  drift_status: false
+Redirect:
+  p_value: 0.8148665993701488
+  drift_status: false
+on_mouseover:
+  p_value: 1.0
+  drift_status: false
+RightClick:
+  p_value: 1.0
+  drift_status: false
+popUpWidnow:
+  p_value: 0.9998031410932465
+  drift_status: false
+Iframe:
+  p_value: 1.0
+  drift_status: false
+age_of_domain:
+  p_value: 0.9999988894018609
+  drift_status: false
+DNSRecord:
+  p_value: 0.8345602176970413
+  drift_status: false
+web_traffic:
+  p_value: 0.9697727875445923
+  drift_status: false
+Page_Rank:
+  p_value: 0.9999999797009747
+  drift_status: false
+Google_Index:
+  p_value: 0.99999999945476
+  drift_status: false
+Links_pointing_to_page:
+  p_value: 0.999999965908459
+  drift_status: false
+Statistical_report:
+  p_value: 1.0
+  drift_status: false
+Result:
+  p_value: 0.6169958385940552
+  drift_status: false

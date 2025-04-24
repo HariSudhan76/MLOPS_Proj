@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
-import numpy 
+import numpy as np
 import pandas as pd
 from sklearn.impute import KNNImputer
 from sklearn.pipeline import Pipeline
@@ -61,7 +61,7 @@ class DataTransformation:
 
 
     def initiate_data_transformation(self)->DataTransformationArtifact:
-        logging.infor("Entered initiate_data_transformation method of DataTransformation class")
+        logging.info("Entered initiate_data_transformation method of DataTransformation class")
         try:
             logging.info("starting data transformation")
             train_df = DataTransformation.read_data(self.data_validation_artifact.valid_train_file_path)
@@ -75,7 +75,30 @@ class DataTransformation:
             ##test Dataframe
             input_feature_test_df = test_df.drop(columns=[TARGET_COLUMN],axis=1)
             target_feature_test_df = test_df[TARGET_COLUMN]
-            target_feature_test_df = target_feature_test_df.replace(-1,)
+            target_feature_test_df = target_feature_test_df.replace(-1,0)
+
+            preprocessor = self.get_data_transformer_object()
+            preprocessor_object = preprocessor.fit(input_feature_train_df)
+            transformed_input_train_feature = preprocessor.transform(input_feature_train_df)
+            transformed_input_test_feature = preprocessor.transform(input_feature_test_df)
+
+            train_arr = np.c_[transformed_input_train_feature,np.array(target_feature_train_df)]
+            test_arr = np.c_[transformed_input_test_feature,np.array(target_feature_test_df)]
+
+            #save numpy array data
+            save_numpy_array_data(self.data_transformation_config.transformed_train_file_path,array=train_arr,)
+            save_numpy_array_data(self.data_transformation_config.transformed_test_file_path,array=test_arr,)
+            save_object(self.data_transformation_config.transformed_object_file_path,preprocessor_object)
+
+            #Preparing artifacts
+
+            data_transformation_artifact = DataTransformationArtifact(
+                transformed_object_file_path=self.data_transformation_config.transformed_object_file_path,
+                transformed_train_file_path=self.data_transformation_config.transformed_train_file_path,
+                transformed_test_file_path=self.data_transformation_config.transformed_test_file_path,
+                
+            )
+            return data_transformation_artifact
 
         except Exception as e:
             raise CustomException(e,sys)
