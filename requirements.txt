@@ -13,5 +13,5 @@ certifi
 pymongo
 dotenv
 PyYAML
-
+mlflow
 -e .

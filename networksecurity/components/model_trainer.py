@@ -22,7 +22,7 @@ from sklearn.ensemble import (
     GradientBoostingClassifier,
     RandomForestClassifier
 )
-
+import mlflow
 
 
 class ModelTrainer:
@@ -33,6 +33,18 @@ class ModelTrainer:
         except Exception as e:
             raise CustomException(e,sys)
     
+    ##entire function below is for tracking
+    def track_mlflow(self,best_model,classificationmetric):
+        with mlflow.start_run():
+            f1_score=classificationmetric.f1_score
+            precision_score = classificationmetric.precision_score
+            recall_score = classificationmetric.recall_score
+
+            mlflow.log_metric("f1_score",f1_score)
+            mlflow.log_metric("precision",precision_score)
+            mlflow.log_metric("recall_score",recall_score)
+            mlflow.sklearn.log_model(best_model,"model")
+
     def train_model(self, X_train,y_train,x_test,y_test):
         models = {
             "Random Forest": RandomForestClassifier(verbose=1),
@@ -75,9 +87,13 @@ class ModelTrainer:
         y_train_pred = best_model.predict(X_train)
 
         classification_train_metric = get_classification_score(y_true=y_train,y_pred=y_train_pred) ## this variable will be used in ML Flow for tracking
-        
+        ## Track MLFlow - open source tool to manage entire life cycle of datascience project
+        self.track_mlflow(best_model,classification_train_metric)
+
         y_test_pred = best_model.predict(x_test)
         classification_test_metric = get_classification_score(y_true=y_test,y_pred=y_test_pred) ## this variable will be used in ML Flow for tracking
+        ##Tracks the test_metrics in mlflow
+        self.track_mlflow(best_model,classification_test_metric)
         
         preprocessor = load_object(file_path=self.data_transformation_artifact.transformed_object_file_path)
         model_dir_path = os.path.dirname(self.model_trainer_config.trained_model_file_path)
@@ -93,8 +109,6 @@ class ModelTrainer:
                              )
         logging.info(f"Model trainer artifact: {model_trainer_artifact}")
         return model_trainer_artifact
-
-
 
 
     def initiate_model_trainer(self)->ModelTrainerArtifact: ##->ModelTrainerArtifact Will be return path

@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/AI%20ML/practice%20ML/End%20to%20End%20MLOPs/mlruns/0/1b69de4eedbc4559947311f2f556bbf8/artifacts
+end_time: 1745496713147
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1b69de4eedbc4559947311f2f556bbf8
+run_name: smiling-whale-25
+run_uuid: 1b69de4eedbc4559947311f2f556bbf8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745496710929
+status: 3
+tags: []
+user_id: Boss Baby
