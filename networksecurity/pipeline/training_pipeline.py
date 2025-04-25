@@ -35,6 +35,7 @@ class TrainingPipeline:
             data_ingestion = DataIngestion(data_ingestion_config=self.data_ingestion_config)
             data_ingestion_artifact = data_ingestion.initiate_data_ingestion()
             logging.info(f"Data Ingestion Completed and artifact: {data_ingestion_artifact}")
+            return data_ingestion_artifact
 
         except Exception as e:
             raise CustomException(e,sys)
@@ -53,11 +54,13 @@ class TrainingPipeline:
 
     def start_data_transformation(self,data_validation_artifact:DataValidationArtifact):
         try:
+            logging.info("Initiate the data transformation")
             data_transformation_config = DataTransformationConfig(self.training_pipeline_config)
             data_transformation = DataTransformation(data_validation_artifact=data_validation_artifact,
             data_transformation_config = data_transformation_config)
 
             data_transformation_artifact = data_transformation.initiate_data_transformation()
+            logging.info("data transformation completed")
             return data_transformation_artifact
         except Exception as e:
             raise CustomException(e,sys)
@@ -74,9 +77,9 @@ class TrainingPipeline:
     def run_pipeline(self):
         try:
             data_ingestion_artifact = self.start_data_ingestion()
-            data_validation_artifact = self.start_data_validation(data_ingestion_artifact)
-            data_transformation_artifact = self.start_data_transformation(data_validation_artifact)
-            model_trainer_artifact = self.start_model_training(data_transformation_artifact)
+            data_validation_artifact = self.start_data_validation(data_ingestion_artifact=data_ingestion_artifact)
+            data_transformation_artifact = self.start_data_transformation(data_validation_artifact=data_validation_artifact)
+            model_trainer_artifact = self.start_model_training(data_transformation_artifact=data_transformation_artifact)
             return model_trainer_artifact
 
         except Exception as e:

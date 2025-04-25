@@ -1,0 +1,59 @@
+[2025-04-25 06:46:43,312] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-25 06:46:43,315] 107 dagshub - INFO - Accessing as HariSudhan76
+[2025-04-25 06:46:43,666] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/HariSudhan76/MLOPS_Project "HTTP/1.1 200 OK"
+[2025-04-25 06:46:43,977] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-25 06:46:43,979] 107 dagshub - INFO - Initialized MLflow to track repo "HariSudhan76/MLOPS_Project"
+[2025-04-25 06:46:43,979] 107 dagshub - INFO - Repository HariSudhan76/MLOPS_Project initialized!
+[2025-04-25 06:46:50,347] 34 root - INFO - start data Ingestion
+[2025-04-25 06:46:53,394] 65 root - INFO - Performed train test split on the dataframe
+[2025-04-25 06:46:53,394] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-04-25 06:46:53,394] 70 root - INFO - Exporting train and test file path
+[2025-04-25 06:46:53,503] 78 root - INFO - Exported train and test file path
+[2025-04-25 06:46:53,503] 37 root - INFO - Data Ingestion Completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\04_25_2025_06_46_41\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_25_2025_06_46_41\\data_ingestion\\ingested\\test.csv')
+[2025-04-25 06:46:53,504] 46 root - INFO - Initiate the data validation
+[2025-04-25 06:46:53,563] 37 root - INFO - Required number of columns:2
+[2025-04-25 06:46:53,563] 38 root - INFO - Data Frame has columns: 31
+[2025-04-25 06:46:53,563] 37 root - INFO - Required number of columns:2
+[2025-04-25 06:46:53,563] 38 root - INFO - Data Frame has columns: 31
+[2025-04-25 06:46:53,565] 61 root - INFO - having_IP_Address-> p-value: 0.9184669915153916, Drift: False
+[2025-04-25 06:46:53,571] 61 root - INFO - URL_Length-> p-value: 1.0, Drift: False
+[2025-04-25 06:46:53,576] 61 root - INFO - Shortining_Service-> p-value: 0.99999999945476, Drift: False
+[2025-04-25 06:46:53,581] 61 root - INFO - having_At_Symbol-> p-value: 1.0, Drift: False
+[2025-04-25 06:46:53,585] 61 root - INFO - double_slash_redirecting-> p-value: 0.9999998567959814, Drift: False
+[2025-04-25 06:46:53,587] 61 root - INFO - Prefix_Suffix-> p-value: 0.8297115944625048, Drift: False
+[2025-04-25 06:46:53,588] 61 root - INFO - having_Sub_Domain-> p-value: 0.8534124262698983, Drift: False
+[2025-04-25 06:46:53,591] 61 root - INFO - SSLfinal_State-> p-value: 0.999991733805822, Drift: False
+[2025-04-25 06:46:53,597] 61 root - INFO - Domain_registeration_length-> p-value: 0.9999988894018609, Drift: False
+[2025-04-25 06:46:53,603] 61 root - INFO - Favicon-> p-value: 0.9999999999999977, Drift: False
+[2025-04-25 06:46:53,609] 61 root - INFO - port-> p-value: 0.9999999997295194, Drift: False
+[2025-04-25 06:46:53,610] 61 root - INFO - HTTPS_token-> p-value: 0.7626508373574088, Drift: False
+[2025-04-25 06:46:53,615] 61 root - INFO - Request_URL-> p-value: 1.0, Drift: False
+[2025-04-25 06:46:53,621] 61 root - INFO - URL_of_Anchor-> p-value: 0.9999999932691597, Drift: False
+[2025-04-25 06:46:53,627] 61 root - INFO - Links_in_tags-> p-value: 0.9999852314115173, Drift: False
+[2025-04-25 06:46:53,633] 61 root - INFO - SFH-> p-value: 0.9999997772661215, Drift: False
+[2025-04-25 06:46:53,634] 61 root - INFO - Submitting_to_email-> p-value: 0.9408396279904456, Drift: False
+[2025-04-25 06:46:53,636] 61 root - INFO - Abnormal_URL-> p-value: 0.888188931899033, Drift: False
+[2025-04-25 06:46:53,641] 61 root - INFO - Redirect-> p-value: 1.0, Drift: False
+[2025-04-25 06:46:53,646] 61 root - INFO - on_mouseover-> p-value: 0.9999999439197564, Drift: False
+[2025-04-25 06:46:53,652] 61 root - INFO - RightClick-> p-value: 0.9999671272734229, Drift: False
+[2025-04-25 06:46:53,657] 61 root - INFO - popUpWidnow-> p-value: 0.9999992399051418, Drift: False
+[2025-04-25 06:46:53,658] 61 root - INFO - Iframe-> p-value: 0.9995088059095283, Drift: False
+[2025-04-25 06:46:53,663] 61 root - INFO - age_of_domain-> p-value: 1.0, Drift: False
+[2025-04-25 06:46:53,665] 61 root - INFO - DNSRecord-> p-value: 0.9989173391406211, Drift: False
+[2025-04-25 06:46:53,666] 61 root - INFO - web_traffic-> p-value: 0.5555063786183708, Drift: False
+[2025-04-25 06:46:53,672] 61 root - INFO - Page_Rank-> p-value: 0.9999998567959814, Drift: False
+[2025-04-25 06:46:53,677] 61 root - INFO - Google_Index-> p-value: 0.9999997772661215, Drift: False
+[2025-04-25 06:46:53,679] 61 root - INFO - Links_pointing_to_page-> p-value: 0.9998939831095225, Drift: False
+[2025-04-25 06:46:53,684] 61 root - INFO - Statistical_report-> p-value: 0.9999462839353719, Drift: False
+[2025-04-25 06:46:53,690] 61 root - INFO - Result-> p-value: 1.0, Drift: False
+[2025-04-25 06:46:53,788] 50 root - INFO - data validation completed
+[2025-04-25 06:46:53,788] 57 root - INFO - Initiate the data transformation
+[2025-04-25 06:46:53,788] 62 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-04-25 06:46:53,788] 64 root - INFO - starting data transformation
+[2025-04-25 06:46:53,821] 47 root - INFO - Entered get_data_stransformer_object method of transformation class
+[2025-04-25 06:46:53,821] 52 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-04-25 06:46:53,833] 49 root - INFO - Entered the save_object method of Main Utils class
+[2025-04-25 06:46:53,835] 53 root - INFO - Exited the save_object method of Main Utils class
+[2025-04-25 06:46:53,835] 49 root - INFO - Entered the save_object method of Main Utils class
+[2025-04-25 06:46:53,838] 53 root - INFO - Exited the save_object method of Main Utils class
+[2025-04-25 06:46:53,840] 63 root - INFO - data transformation completed

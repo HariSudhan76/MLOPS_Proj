@@ -1,6 +1,6 @@
 import sys 
 import os
-
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 import certifi
 ca = certifi.where()
 from dotenv import load_dotenv
@@ -51,7 +51,9 @@ async def train_route():
         train_pipeline.run_pipeline()
         return Response("Training is successfull")
     except Exception as e:
-        raise CustomException(e,sys)
+        import traceback
+        print(traceback.format_exc())
+        return Response(f"Error occurred: {e}", status_code=500)
 
 if __name__=="__main__":
-    app_run(app,host="http://127.0.0.1",port=5000)
+    app_run(app,host="0.0.0.0",port=8000)

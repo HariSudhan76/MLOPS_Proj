@@ -28,7 +28,7 @@ dagshub.init(repo_owner='HariSudhan76',repo_name='MLOPS_Project',mlflow=True)
 
 
 class ModelTrainer:
-    def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
+    def __init__(self,data_transformation_artifact:DataTransformationArtifact,model_trainer_config:ModelTrainerConfig):
         try:
             self.model_trainer_config = model_trainer_config
             self.data_transformation_artifact = data_transformation_artifact
@@ -107,7 +107,7 @@ class ModelTrainer:
         save_object("final_model/model.pkl",best_model)
 
         ## Model Trainer Artifact
-        model_trainer_artifact = ModelTrainerArtifact(trained_model_file_path=self.model_trainer_config,
+        model_trainer_artifact = ModelTrainerArtifact(trained_model_file_path=self.model_trainer_config.trained_model_file_path,
                              train_metric_artifact=classification_train_metric,
                              test_metric_artifact=classification_test_metric,
                              )

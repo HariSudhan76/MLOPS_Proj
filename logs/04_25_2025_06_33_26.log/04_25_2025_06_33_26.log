@@ -1,0 +1,20 @@
+[2025-04-25 06:33:28,848] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-25 06:33:28,851] 107 dagshub - INFO - Accessing as HariSudhan76
+[2025-04-25 06:33:29,183] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/HariSudhan76/MLOPS_Project "HTTP/1.1 200 OK"
+[2025-04-25 06:33:29,514] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-25 06:33:29,515] 107 dagshub - INFO - Initialized MLflow to track repo "HariSudhan76/MLOPS_Project"
+[2025-04-25 06:33:29,515] 107 dagshub - INFO - Repository HariSudhan76/MLOPS_Project initialized!
+[2025-04-25 06:33:35,511] 34 root - INFO - start data Ingestion
+[2025-04-25 06:33:37,781] 65 root - INFO - Performed train test split on the dataframe
+[2025-04-25 06:33:37,782] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-04-25 06:33:37,782] 70 root - INFO - Exporting train and test file path
+[2025-04-25 06:33:37,836] 78 root - INFO - Exported train and test file path
+[2025-04-25 06:33:37,837] 37 root - INFO - Data Ingestion Completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\04_25_2025_06_33_26\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_25_2025_06_33_26\\data_ingestion\\ingested\\test.csv')
+[2025-04-25 06:33:37,838] 45 root - INFO - Initiate the data validation
+[2025-04-25 06:34:30,335] 34 root - INFO - start data Ingestion
+[2025-04-25 06:34:32,384] 65 root - INFO - Performed train test split on the dataframe
+[2025-04-25 06:34:32,384] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-04-25 06:34:32,384] 70 root - INFO - Exporting train and test file path
+[2025-04-25 06:34:32,439] 78 root - INFO - Exported train and test file path
+[2025-04-25 06:34:32,439] 37 root - INFO - Data Ingestion Completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\04_25_2025_06_33_26\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_25_2025_06_33_26\\data_ingestion\\ingested\\test.csv')
+[2025-04-25 06:34:32,440] 45 root - INFO - Initiate the data validation

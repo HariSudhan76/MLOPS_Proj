@@ -1,0 +1,64 @@
+[2025-04-25 21:40:59,037] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-25 21:40:59,040] 107 dagshub - INFO - Accessing as HariSudhan76
+[2025-04-25 21:40:59,388] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/HariSudhan76/MLOPS_Project "HTTP/1.1 200 OK"
+[2025-04-25 21:40:59,697] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-25 21:40:59,698] 107 dagshub - INFO - Initialized MLflow to track repo "HariSudhan76/MLOPS_Project"
+[2025-04-25 21:40:59,698] 107 dagshub - INFO - Repository HariSudhan76/MLOPS_Project initialized!
+[2025-04-25 21:41:04,181] 34 root - INFO - start data Ingestion
+[2025-04-25 21:41:06,359] 65 root - INFO - Performed train test split on the dataframe
+[2025-04-25 21:41:06,359] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2025-04-25 21:41:06,360] 70 root - INFO - Exporting train and test file path
+[2025-04-25 21:41:06,479] 78 root - INFO - Exported train and test file path
+[2025-04-25 21:41:06,480] 37 root - INFO - Data Ingestion Completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\04_25_2025_21_40_57\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_25_2025_21_40_57\\data_ingestion\\ingested\\test.csv')
+[2025-04-25 21:41:06,481] 46 root - INFO - Initiate the data validation
+[2025-04-25 21:41:06,537] 37 root - INFO - Required number of columns:2
+[2025-04-25 21:41:06,537] 38 root - INFO - Data Frame has columns: 31
+[2025-04-25 21:41:06,537] 37 root - INFO - Required number of columns:2
+[2025-04-25 21:41:06,537] 38 root - INFO - Data Frame has columns: 31
+[2025-04-25 21:41:06,543] 61 root - INFO - having_IP_Address-> p-value: 0.9999999999999977, Drift: False
+[2025-04-25 21:41:06,547] 61 root - INFO - URL_Length-> p-value: 0.9999999439197564, Drift: False
+[2025-04-25 21:41:06,548] 61 root - INFO - Shortining_Service-> p-value: 0.9813203340096494, Drift: False
+[2025-04-25 21:41:06,550] 61 root - INFO - having_At_Symbol-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,553] 61 root - INFO - double_slash_redirecting-> p-value: 0.9999999989342155, Drift: False
+[2025-04-25 21:41:06,557] 61 root - INFO - Prefix_Suffix-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,560] 61 root - INFO - having_Sub_Domain-> p-value: 0.9999999999992943, Drift: False
+[2025-04-25 21:41:06,563] 61 root - INFO - SSLfinal_State-> p-value: 0.9999999999999148, Drift: False
+[2025-04-25 21:41:06,567] 61 root - INFO - Domain_registeration_length-> p-value: 0.9999999797009747, Drift: False
+[2025-04-25 21:41:06,569] 61 root - INFO - Favicon-> p-value: 0.9999999999999977, Drift: False
+[2025-04-25 21:41:06,572] 61 root - INFO - port-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,575] 61 root - INFO - HTTPS_token-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,577] 61 root - INFO - Request_URL-> p-value: 0.999999999870135, Drift: False
+[2025-04-25 21:41:06,581] 61 root - INFO - URL_of_Anchor-> p-value: 0.999999999973084, Drift: False
+[2025-04-25 21:41:06,582] 61 root - INFO - Links_in_tags-> p-value: 0.7131044860207315, Drift: False
+[2025-04-25 21:41:06,586] 61 root - INFO - SFH-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,589] 61 root - INFO - Submitting_to_email-> p-value: 0.9999998567959814, Drift: False
+[2025-04-25 21:41:06,592] 61 root - INFO - Abnormal_URL-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,593] 61 root - INFO - Redirect-> p-value: 0.9985585060006266, Drift: False
+[2025-04-25 21:41:06,596] 61 root - INFO - on_mouseover-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,598] 61 root - INFO - RightClick-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,601] 61 root - INFO - popUpWidnow-> p-value: 0.9999999999999728, Drift: False
+[2025-04-25 21:41:06,604] 61 root - INFO - Iframe-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,605] 61 root - INFO - age_of_domain-> p-value: 0.7944376881422921, Drift: False
+[2025-04-25 21:41:06,608] 61 root - INFO - DNSRecord-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,609] 61 root - INFO - web_traffic-> p-value: 0.896205213334659, Drift: False
+[2025-04-25 21:41:06,613] 61 root - INFO - Page_Rank-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,615] 61 root - INFO - Google_Index-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,617] 61 root - INFO - Links_pointing_to_page-> p-value: 0.888188931899031, Drift: False
+[2025-04-25 21:41:06,617] 61 root - INFO - Statistical_report-> p-value: 0.990289787988257, Drift: False
+[2025-04-25 21:41:06,620] 61 root - INFO - Result-> p-value: 1.0, Drift: False
+[2025-04-25 21:41:06,680] 50 root - INFO - data validation completed
+[2025-04-25 21:41:06,680] 57 root - INFO - Initiate the data transformation
+[2025-04-25 21:41:06,680] 62 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-04-25 21:41:06,680] 64 root - INFO - starting data transformation
+[2025-04-25 21:41:06,702] 47 root - INFO - Entered get_data_stransformer_object method of transformation class
+[2025-04-25 21:41:06,702] 52 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-04-25 21:41:06,710] 49 root - INFO - Entered the save_object method of Main Utils class
+[2025-04-25 21:41:06,712] 53 root - INFO - Exited the save_object method of Main Utils class
+[2025-04-25 21:41:06,712] 49 root - INFO - Entered the save_object method of Main Utils class
+[2025-04-25 21:41:06,714] 53 root - INFO - Exited the save_object method of Main Utils class
+[2025-04-25 21:41:06,715] 63 root - INFO - data transformation completed
+[2025-04-25 21:46:13,775] 49 root - INFO - Entered the save_object method of Main Utils class
+[2025-04-25 21:46:13,776] 53 root - INFO - Exited the save_object method of Main Utils class
+[2025-04-25 21:46:13,776] 49 root - INFO - Entered the save_object method of Main Utils class
+[2025-04-25 21:46:13,781] 53 root - INFO - Exited the save_object method of Main Utils class
+[2025-04-25 21:46:13,781] 114 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\04_25_2025_21_40_57\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9910768606773473, precision_score=0.9925865745912461, recall_score=0.9925865745912461), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9870654810024252, precision_score=0.9898662342926632, recall_score=0.9898662342926632))
