@@ -8,6 +8,7 @@ from networksecurity.components.data_ingestion import DataIngestion
 from networksecurity.components.data_validation import DataValidation
 from networksecurity.components.data_transformation import DataTransformation
 from networksecurity.components.model_trainer import ModelTrainer
+from networksecurity.constant import training_pipeline
 
 from networksecurity.entity.config_entity import(
     TrainingPipelineConfig,
@@ -73,13 +74,29 @@ class TrainingPipeline:
             return model_training_artifact
         except Exception as e:
             raise CustomException(e,sys)
-    
+    ##local artifact is going to s3 bucket    
+    def sync_artifact_dir_to_s3(self):
+        try:
+            aws_bucket_url = f"s3://{training_pipeline.TRAINING_BUCKET_NAME}/artifact{self.training_pipeline_config.timestamp}"
+            self.s3_sync.sync_folder_to_s3(folder = self.training_pipeline_config.artifact_dir,aws_bucket_url=aws_bucket_url)
+        except Exception as e:
+            raise CustomException(e,sys)
+    ##local final model is pushed to s3 buckt
+    def sync_saved_model_dir_to_s3(self):
+        try:
+            aws_bucket_url = f"s3://{training_pipeline.TRAINING_BUCKET_NAME}/final_model/{self.training_pipeline_config.timestamp}"
+            self.s3_sync.sync_folder_to_s3(folder = self.training_pipeline_config.model_dir,aws_bucket_url=aws_bucket_url)
+        except Exception as e:
+            raise CustomException(e,sys)
+
     def run_pipeline(self):
         try:
             data_ingestion_artifact = self.start_data_ingestion()
             data_validation_artifact = self.start_data_validation(data_ingestion_artifact=data_ingestion_artifact)
             data_transformation_artifact = self.start_data_transformation(data_validation_artifact=data_validation_artifact)
             model_trainer_artifact = self.start_model_training(data_transformation_artifact=data_transformation_artifact)
+            self.sync_artifact_dir_to_s3()
+            self.sync_saved_model_dir_to_s3()
             return model_trainer_artifact
 
         except Exception as e:

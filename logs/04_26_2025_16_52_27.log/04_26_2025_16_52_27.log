@@ -1,0 +1,6 @@
+[2025-04-26 16:52:29,952] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-26 16:52:29,954] 107 dagshub - INFO - Accessing as HariSudhan76
+[2025-04-26 16:52:30,293] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/HariSudhan76/MLOPS_Project "HTTP/1.1 200 OK"
+[2025-04-26 16:52:30,610] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-26 16:52:30,611] 107 dagshub - INFO - Initialized MLflow to track repo "HariSudhan76/MLOPS_Project"
+[2025-04-26 16:52:30,611] 107 dagshub - INFO - Repository HariSudhan76/MLOPS_Project initialized!
